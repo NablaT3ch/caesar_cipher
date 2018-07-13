@@ -59,9 +59,10 @@ mode=encrypt
         #key=13
         #mode='encrypt'
         #mode='decrypt'
-        LETTERS='ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+        #LETTERS='ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+        LETTERS='abcdefghijklmnopqrstuvwxyz'
         ciphertxt=''
-        plantxt=plantxt.upper()
+        plantxt=plantxt.lower()
         for i in plantxt:
             if i in LETTERS:
                 num=LETTERS.find(i)
